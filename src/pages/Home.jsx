@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/layout/Navbar';
 import Hero from '../components/home/Hero';
 import ServicesOverview from '../components/home/ServicesOverview';
@@ -15,6 +16,11 @@ import Background from '../components/Background';
 const Home = () => {
   return (
     <div className="home-page">
+      <Helmet>
+        <title>DilushaTech - Web & App Development Company in India</title>
+        <meta name="description" content="DilushaTech is the leading web development company in India specializing in React, Node.js, and mobile app development services." />
+        <link rel="canonical" href="https://dilushatech.in/" />
+      </Helmet>
       <Background />
       <Navbar />
       <a 

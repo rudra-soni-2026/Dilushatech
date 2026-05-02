@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 
@@ -50,6 +51,11 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
+      <Helmet>
+        <title>Contact Us - DilushaTech | Web & App Development Inquiry</title>
+        <meta name="description" content="Get in touch with DilushaTech for your next web or mobile app development project. We provide expert digital solutions and professional support." />
+        <link rel="canonical" href="https://dilushatech.in/contact" />
+      </Helmet>
       <Navbar />
       <section className="u-section" style={{ paddingTop: '120px', paddingBottom: '4rem' }}>
         <div className="u-container" style={{ maxWidth: '1100px' }}>

@@ -1,10 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 
 const TermsConditions = () => {
   return (
     <div className="policy-page">
+      <Helmet>
+        <title>Terms & Conditions - DilushaTech</title>
+        <meta name="description" content="Read the terms and conditions for using DilushaTech services and our digital products. We ensure transparency and professional standards." />
+        <link rel="canonical" href="https://dilushatech.in/terms" />
+      </Helmet>
       <Navbar />
       <section className="u-section" style={{ paddingTop: '150px' }}>
         <div className="u-container" style={{ maxWidth: '800px' }}>

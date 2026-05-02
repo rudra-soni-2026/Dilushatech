@@ -1,10 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="policy-page">
+    <div className="privacy-page">
+      <Helmet>
+        <title>Privacy Policy - DilushaTech</title>
+        <meta name="description" content="Read the privacy policy of DilushaTech to understand how we protect your data and ensure transparency." />
+        <link rel="canonical" href="https://dilushatech.in/privacy" />
+      </Helmet>
       <Navbar />
       <section className="u-section" style={{ paddingTop: '150px' }}>
         <div className="u-container" style={{ maxWidth: '800px' }}>
