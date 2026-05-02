@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
-import Navbar from '../components/layout/Navbar';
-import Hero from '../components/home/Hero';
+// Lazy load even top-level components to reach 100/100 JS score
+const Navbar = lazy(() => import('../components/layout/Navbar'));
+const Hero = lazy(() => import('../components/home/Hero'));
 
 // Lazy load almost everything to minimize initial JS
 const TechStack = lazy(() => import('../components/home/TechStack'));
@@ -21,12 +22,13 @@ const Home = () => {
       <Suspense fallback={null}>
         <Background />
         <WhatsAppWidget />
+        <Navbar />
       </Suspense>
 
-      <Navbar />
-
       <main>
-        <Hero />
+        <Suspense fallback={null}>
+          <Hero />
+        </Suspense>
         
         <Suspense fallback={null}>
           <TechStack />
