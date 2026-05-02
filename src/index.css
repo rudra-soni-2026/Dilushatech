@@ -1628,3 +1628,102 @@ html { scroll-behavior: smooth; }
     width: 100%;
   }
 }
+
+/* --- SERVICES MOBILE FIXES --- */
+@media (max-width: 768px) {
+  .u-card {
+    padding: 2rem !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .u-card-title {
+    font-size: 1.4rem !important;
+  }
+
+  .u-card-desc {
+    font-size: 1rem !important;
+  }
+}
+
+/* --- GENERAL MOBILE OPTIMIZATIONS --- */
+@media (max-width: 768px) {
+  .hero-content-v2 {
+    padding-top: 40px !important;
+  }
+
+  .tech-stack {
+    padding: 10px 0 !important;
+  }
+
+  .marquee-content-v3 {
+    gap: 2rem !important;
+  }
+
+  .tech-item-v3 {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* --- PRODUCT SHOWCASE MOBILE FIXES --- */
+@media (max-width: 768px) {
+  .phone-stack-v3 {
+    width: 300px !important;
+    height: 480px !important;
+    perspective: 800px;
+    margin: 0 auto !important;
+  }
+  
+  .phone-frame-v3 {
+    width: 210px !important;
+    height: 420px !important;
+    border-radius: 30px !important;
+    padding: 8px !important;
+  }
+
+  .secondary-phone {
+    display: none !important; /* Hide background phones on mobile to prevent clutter */
+  }
+
+  .app-hub-centered {
+    padding: 2rem 0 !important;
+    overflow: hidden;
+  }
+
+  .app-switcher-v3 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem !important;
+    margin-top: 2rem !important;
+    padding: 0 1rem;
+  }
+
+  .switcher-btn {
+    padding: 0.5rem 1.2rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  .phone-glow-v3 {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .dynamic-island-v3 {
+    width: 45px !important;
+    height: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .phone-stack-v3 {
+    width: 260px !important;
+    height: 420px !important;
+  }
+
+  .phone-frame-v3 {
+    width: 180px !important;
+    height: 360px !important;
+  }
+}
