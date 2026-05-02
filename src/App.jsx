@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import favIcon from './assets/fav.png';
 
-const Home = lazy(() => import('./pages/Home'));
+import Home from './pages/Home';
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const TermsConditions = lazy(() => import('./pages/TermsConditions'));
 const Contact = lazy(() => import('./pages/Contact'));

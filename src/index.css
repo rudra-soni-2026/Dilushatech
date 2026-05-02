@@ -1721,7 +1721,7 @@ html { scroll-behavior: smooth; }
 
 .app-hub-centered { flex-direction: column !important; }
 .app-switcher-v3 { display: flex; gap: 1rem; margin-top: 3rem; }
-.switcher-btn { padding: 0.6rem 1.5rem; border: 1px solid rgba(0,0,0,0.05); background: #ffffff; border-radius: 30px; font-size: 0.9rem; font-weight: 700; color: #94a3b8; cursor: pointer; transition: all 0.3s ease; }
+.switcher-btn { padding: 0.6rem 1.5rem; border: 1px solid rgba(0,0,0,0.05); background: #ffffff; border-radius: 30px; font-size: 0.9rem; font-weight: 700; color: #334155; cursor: pointer; transition: all 0.3s ease; }
 .switcher-btn.active { background: #000000; color: #ffffff; border-color: #000000; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
 @keyframes slideProgress {
