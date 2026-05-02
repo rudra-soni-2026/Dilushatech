@@ -1,12 +1,11 @@
 import React, { Suspense, lazy } from 'react';
-import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/layout/Navbar';
 import Hero from '../components/home/Hero';
-import TechStack from '../components/home/TechStack';
-import Background from '../components/Background';
-import Footer from '../components/layout/Footer';
 
-// Lazy load below-the-fold components
+// Lazy load almost everything to minimize initial JS
+const TechStack = lazy(() => import('../components/home/TechStack'));
+const Background = lazy(() => import('../components/Background'));
+const Footer = lazy(() => import('../components/layout/Footer'));
 const WhatsAppWidget = lazy(() => import('../components/WhatsAppWidget'));
 const ServicesOverview = lazy(() => import('../components/home/ServicesOverview'));
 const ProductShowcase = lazy(() => import('../components/home/ProductShowcase'));
@@ -19,22 +18,19 @@ const FinalCTA = lazy(() => import('../components/home/FinalCTA'));
 const Home = () => {
   return (
     <div className="home-page">
-      <Helmet>
-        <title>DilushaTech - Web & App Development Company in India</title>
-        <meta name="description" content="DilushaTech is the leading web development company in India specializing in React, Node.js, and mobile app development services." />
-        <link rel="canonical" href="https://dilushatech.in/" />
-      </Helmet>
-      
-      <Background />
-      <Navbar />
-      
       <Suspense fallback={null}>
+        <Background />
         <WhatsAppWidget />
       </Suspense>
 
+      <Navbar />
+
       <main>
         <Hero />
-        <TechStack />
+        
+        <Suspense fallback={null}>
+          <TechStack />
+        </Suspense>
         
         <Suspense fallback={<div className="u-section" style={{ height: '200px' }}></div>}>
           <ServicesOverview />
@@ -72,10 +68,11 @@ const Home = () => {
         </Suspense>
       </main>
 
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   );
 };
 
 export default Home;
-

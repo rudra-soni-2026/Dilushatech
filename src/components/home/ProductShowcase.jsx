@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import tvayiImg from '../../assets/tvayi.png';
-import winxImg from '../../assets/Winx.jpeg';
+import tvayiImg from '../../assets/tvayi.webp';
+import winxImg from '../../assets/Winx.webp';
 
 const ProductShowcase = () => {
   const [activeApp, setActiveApp] = React.useState(0);
