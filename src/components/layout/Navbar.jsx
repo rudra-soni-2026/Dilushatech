@@ -29,12 +29,30 @@ const Navbar = () => {
         </button>
 
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
-          <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
-          <a href="#services" className="nav-link" onClick={() => setIsOpen(false)}>Services</a>
-          <a href="#products" className="nav-link" onClick={() => setIsOpen(false)}>Products</a>
-          <a href="#testimonials" className="nav-link" onClick={() => setIsOpen(false)}>Testimonials</a>
-          <a href="#faq" className="nav-link" onClick={() => setIsOpen(false)}>FAQ</a>
-          <Link to="/contact" className="nav-link nav-cta" onClick={() => setIsOpen(false)}>Get Started</Link>
+          <div className="nav-mobile-top">
+            <img src={mainLogo} alt="DilushaTech" className="nav-logo-img-mobile" />
+            <button className="nav-close" onClick={() => setIsOpen(false)}>&times;</button>
+          </div>
+          
+          <div className="nav-mobile-mid">
+            <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
+            <a href="#services" className="nav-link" onClick={() => setIsOpen(false)}>Services</a>
+            <a href="#products" className="nav-link" onClick={() => setIsOpen(false)}>Products</a>
+            <a href="#testimonials" className="nav-link" onClick={() => setIsOpen(false)}>Testimonials</a>
+            <a href="#faq" className="nav-link" onClick={() => setIsOpen(false)}>FAQ</a>
+          </div>
+
+          <div className="nav-mobile-bottom">
+            <Link to="/contact" className="nav-link nav-cta" onClick={() => setIsOpen(false)}>Get Started</Link>
+            <div className="nav-mobile-socials">
+              <p>Follow our journey</p>
+              <div className="social-dots">
+                <span className="dot"></span>
+                <span className="dot"></span>
+                <span className="dot"></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
