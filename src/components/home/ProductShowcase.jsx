@@ -30,11 +30,16 @@ const ProductShowcase = () => {
   const [imgError, setImgError] = React.useState(false);
 
   React.useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveApp((prev) => (prev + 1) % products.length);
-      setImgError(false);
-    }, 5000);
-    return () => clearInterval(timer);
+    // Delay timer start to avoid contention during hydration
+    const timeout = setTimeout(() => {
+      const interval = setInterval(() => {
+        setActiveApp((prev) => (prev + 1) % products.length);
+        setImgError(false);
+      }, 6000); // Slightly longer for better readability and less reflow
+      return () => clearInterval(interval);
+    }, 2000);
+    
+    return () => clearTimeout(timeout);
   }, [products.length]);
 
   return (

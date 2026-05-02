@@ -198,7 +198,7 @@ svg rect {
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(20px);
-  transition: all 0.4s ease;
+  transition: transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease, opacity 0.4s ease;
 }
 
 .countdown-item::before {
@@ -257,7 +257,7 @@ svg rect {
   padding: 2rem;
   border-radius: 24px;
   border: 1px solid var(--glass-border);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .timeline-step.left { justify-content: flex-start; }
@@ -300,7 +300,7 @@ svg rect {
   text-decoration: none;
   box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
   z-index: 9999;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.4s ease, box-shadow 0.4s ease;
   animation: floatBounce 3s infinite;
 }
 
@@ -460,7 +460,7 @@ svg rect {
   font-weight: 700;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-notify:hover {
@@ -478,7 +478,7 @@ svg rect {
 
 .social-icon {
   color: var(--text-muted);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   opacity: 0.6;
 }
 
@@ -592,7 +592,7 @@ svg rect {
   width: 100%;
   height: var(--nav-height);
   z-index: 1000;
-  transition: all 0.4s ease;
+  transition: transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease, opacity 0.4s ease;
   display: flex;
   align-items: center;
 }
@@ -697,7 +697,7 @@ svg rect {
   width: 25px;
   height: 2px;
   background-color: var(--text-primary);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   border-radius: 2px;
 }
 
@@ -821,7 +821,7 @@ svg rect {
   background: rgba(15, 23, 42, 0.3);
   backdrop-filter: blur(4px);
   z-index: 999;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-open .nav-overlay {
@@ -932,7 +932,7 @@ svg rect {
   font-weight: 600;
   border: 1px solid var(--glass-border);
   border-radius: 100px;
-  transition: all 0.4s ease;
+  transition: transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease, opacity 0.4s ease;
 }
 
 .btn-v2-secondary:hover {
@@ -1032,7 +1032,7 @@ svg rect {
   flex: 1;
   background: #f1f5f9;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .g-bar:nth-child(even) {
@@ -1112,7 +1112,7 @@ svg rect {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  transition: all 0.4s ease;
+  transition: transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease, opacity 0.4s ease;
   border: 1px solid transparent;
 }
 
@@ -1184,7 +1184,7 @@ svg rect {
   flex-direction: column;
   gap: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .u-card:hover {
@@ -1248,7 +1248,7 @@ svg rect {
   padding: 6px 12px;
   border-radius: 8px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-u-primary:hover { opacity: 0.8; }
@@ -1261,7 +1261,7 @@ svg rect {
   border-radius: 8px;
   border: 1px solid var(--glass-border);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-u-secondary:hover { background: #f1f5f9; }
@@ -1507,7 +1507,7 @@ svg rect {
   border-radius: 20px;
   padding: 3rem;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
 }
 
@@ -1570,7 +1570,7 @@ svg rect {
   background: #f8fafc;
   border-radius: 20px;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stat-card-v2:hover {
@@ -1627,7 +1627,7 @@ svg rect {
   font-size: 0.85rem;
   font-weight: 700;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   border: 1px solid rgba(0,0,0,0.1);
 }
@@ -1894,5 +1894,51 @@ html { scroll-behavior: smooth; }
   .phone-frame-v3 {
     width: 180px !important;
     height: 360px !important;
+  }
+}
+
+/* --- Contact Page Responsiveness --- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+  
+  .contact-info .u-title, 
+  .contact-info .u-subtitle {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .info-items {
+    align-items: center;
+  }
+  
+  .info-item {
+    text-align: left;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 1.5rem !important;
+  }
+  
+  .contact-form-container div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
   }
 }

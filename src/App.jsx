@@ -1,6 +1,5 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
 import favIcon from './assets/fav.png';
 
 import Home from './pages/Home';
@@ -19,20 +18,18 @@ function App() {
   }, []);
 
   return (
-    <HelmetProvider>
-      <Router>
-        <Suspense fallback={null}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<TermsConditions />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/coming-soon" element={<ComingSoon />} />
-            <Route path="*" element={<Home />} />
-          </Routes>
-        </Suspense>
-      </Router>
-    </HelmetProvider>
+    <Router>
+      <Suspense fallback={null}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsConditions />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/coming-soon" element={<ComingSoon />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </Suspense>
+    </Router>
   );
 }
 
