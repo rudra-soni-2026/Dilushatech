@@ -7,13 +7,13 @@ const Hero = () => {
       
       <div className="hero-content-v2">
         <h1 className="hero-headline-v2">
-          Mastering the <span className="shimmer-text">Digital</span> <br />
-          Experience for <span className="gradient-text-v2">Brands</span>
+          India's Premier <span className="shimmer-text">Web & App</span> <br />
+          Development <span className="gradient-text-v2">Agency</span>
         </h1>
         
         <p className="hero-subtext-v2">
-          We combine high-end engineering with strategic marketing to build 
-          digital solutions that aren't just seen—they're remembered.
+          As a leading web development company in India, we provide expert mobile app 
+          development services and custom software to help brands scale globally.
         </p>
         
         <div className="hero-cta-v2">

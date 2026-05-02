@@ -4,27 +4,27 @@ const ServicesOverview = () => {
   const services = [
     {
       title: 'Custom Development',
-      description: 'Web, App, and Software solutions built with cutting-edge tech like Next.js and Flutter.',
+      description: 'Expert React development and custom web solutions built for high performance and scalability in India.',
       icon: '',
-      category: 'Dev'
+      category: 'React Dev'
+    },
+    {
+      title: 'Backend & API',
+      description: 'Robust Node.js backend developer services to power your mobile apps and complex business systems.',
+      icon: '',
+      category: 'Node.js'
     },
     {
       title: 'Digital Marketing',
-      description: 'SEO, Google Ads, and Social Media strategies to skyrocket your brand visibility.',
+      description: 'Data-driven mobile app development services and SEO strategies to skyrocket your brand visibility globally.',
       icon: '',
-      category: 'Marketing'
+      category: 'Growth'
     },
     {
       title: 'SaaS & Products',
-      description: 'Ready-to-use software like our GST Billing System to automate your business.',
+      description: 'Ready-to-use software like our GST Billing System to automate and digitize your business operations.',
       icon: '',
       category: 'Software'
-    },
-    {
-      title: 'Branding & UI/UX',
-      description: 'Creating premium identities and user experiences that captivate your customers.',
-      icon: '',
-      category: 'Design'
     },
   ];
 
