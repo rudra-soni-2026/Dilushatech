@@ -5,25 +5,25 @@ const ServicesOverview = () => {
     {
       title: 'Custom Development',
       description: 'Web, App, and Software solutions built with cutting-edge tech like Next.js and Flutter.',
-      icon: '💻',
+      icon: '',
       category: 'Dev'
     },
     {
       title: 'Digital Marketing',
       description: 'SEO, Google Ads, and Social Media strategies to skyrocket your brand visibility.',
-      icon: '📈',
+      icon: '',
       category: 'Marketing'
     },
     {
       title: 'SaaS & Products',
       description: 'Ready-to-use software like our GST Billing System to automate your business.',
-      icon: '🚀',
+      icon: '',
       category: 'Software'
     },
     {
       title: 'Branding & UI/UX',
       description: 'Creating premium identities and user experiences that captivate your customers.',
-      icon: '✨',
+      icon: '',
       category: 'Design'
     },
   ];
