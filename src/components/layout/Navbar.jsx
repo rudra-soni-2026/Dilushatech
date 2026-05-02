@@ -16,10 +16,10 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'nav-open' : ''}`}>
-      <div className="nav-overlay" onClick={() => setIsOpen(false)}></div>
+      <div className="nav-overlay" onClick={() => setIsOpen(false)} role="button" aria-label="Close Menu"></div>
       <div className="nav-container">
         <Link to="/" className="nav-logo" onClick={() => setIsOpen(false)}>
-          <img src={mainLogo} alt="DilushaTech" className="nav-logo-img" />
+          <img src={mainLogo} alt="DilushaTech" className="nav-logo-img" decoding="async" />
         </Link>
         
         <button className="nav-mobile-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">

@@ -15,7 +15,7 @@ const Footer = () => {
           <Link to="/contact" style={{ color: '#64748b', fontSize: '0.9rem', textDecoration: 'none' }}>Contact Us</Link>
         </div>
 
-        <div style={{ color: '#94a3b8', fontSize: '0.85rem' }}>
+        <div style={{ color: '#475569', fontSize: '0.85rem' }}>
           © 2026 DilushaTech. Built for the next generation of business.
         </div>
       </div>

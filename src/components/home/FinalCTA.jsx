@@ -12,7 +12,7 @@ const FinalCTA = () => {
         </p>
         <div className="hero-cta-v2">
           <Link to="/contact" className="btn-v2-primary">Get a Free Consultation</Link>
-          <a href="https://wa.me/917470818764" target="_blank" rel="noopener noreferrer" className="btn-v2-secondary">WhatsApp Us</a>
+          <a href="https://wa.me/917470818764" target="_blank" rel="noopener noreferrer" className="btn-v2-secondary" aria-label="Contact us via WhatsApp">WhatsApp Us</a>
         </div>
       </div>
     </section>

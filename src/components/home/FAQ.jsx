@@ -45,6 +45,8 @@ const FAQ = () => {
             >
               <button 
                 onClick={() => setActiveIndex(activeIndex === index ? null : index)}
+                aria-expanded={activeIndex === index}
+                aria-controls={`faq-answer-${index}`}
                 style={{ 
                   width: '100%', 
                   padding: '1.5rem', 
@@ -66,8 +68,10 @@ const FAQ = () => {
                 }}>+</span>
               </button>
               
-              <div style={{ 
-                maxHeight: activeIndex === index ? '200px' : '0', 
+              <div 
+                id={`faq-answer-${index}`}
+                style={{ 
+                  maxHeight: activeIndex === index ? '200px' : '0', 
                 opacity: activeIndex === index ? 1 : 0,
                 overflow: 'hidden',
                 transition: 'all 0.3s ease',

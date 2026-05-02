@@ -45,13 +45,13 @@ const ServicesOverview = () => {
               <div className="u-card" key={index}>
                 <div className="u-content">
                   <div className="u-card-top">
-                    <span className="u-card-cat">{service.category}</span>
+                    <span className="u-card-cat" style={{ color: '#000000', fontWeight: '900' }}>{service.category}</span>
                     <span className="u-card-icon">{service.icon}</span>
                   </div>
                   <h3 className="u-card-title">{service.title}</h3>
-                  <p className="u-card-desc">{service.description}</p>
-                  <a href={waLink} target="_blank" rel="noopener noreferrer" className="service-wa-btn">
-                    Inquire on WhatsApp
+                  <p className="u-card-desc" style={{ color: '#334155' }}>{service.description}</p>
+                  <a href={waLink} target="_blank" rel="noopener noreferrer" className="service-wa-btn" aria-label={`Inquire about ${service.title} on WhatsApp`}>
+                    Inquire about {service.title}
                   </a>
                 </div>
               </div>

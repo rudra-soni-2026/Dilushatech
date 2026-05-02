@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+/* Fonts loaded via index.html for better performance */
 
 :root {
   --bg-dark: #ffffff;
   --bg-navy: #f8fafc;
   --accent-cyan: #0891b2;
   --accent-blue: #2563eb;
-  --text-main: #0f172a;
-  --text-muted: #64748b;
+  --text-main: #000000; /* Max contrast */
+  --text-muted: #334155; /* Darkened even more from #475569 for 100 score */
   --glass: rgba(255, 255, 255, 0.7);
   --glass-border: rgba(0, 0, 0, 0.08);
 }
@@ -22,6 +22,18 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-main);
   overflow-x: hidden;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .app-container {
@@ -530,7 +542,7 @@ svg rect {
   --bg-main: #ffffff;
   --bg-card: #ffffff;
   --text-primary: #0f172a;
-  --text-secondary: #64748b;
+  --text-secondary: #334155;
   --nav-height: 60px;
 }
 
@@ -717,11 +729,18 @@ svg rect {
 
   .nav-mobile-toggle {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
     position: absolute;
     right: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1001;
+    background: transparent;
+    border: none;
+    cursor: pointer;
   }
 
   .nav-logo-img {
@@ -1010,9 +1029,9 @@ svg rect {
 }
 
 .g-value {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #000000;
 }
 
 @media (max-width: 1200px) {
@@ -1560,6 +1579,16 @@ svg rect {
   text-transform: uppercase;
   color: var(--text-secondary);
   letter-spacing: 1px;
+}
+
+.stat.u-card-cat {
+  font-size: 0.65rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #1e3a8a; /* Dark navy for contrast */
+  letter-spacing: 1.5px;
+  display: block;
+  margin-bottom: 0.8rem;
 }
 
 .u-card-top {

@@ -73,6 +73,8 @@ const ProductShowcase = () => {
                     src={products[activeApp].image} 
                     alt={products[activeApp].name} 
                     className="app-real-screenshot slide-fade"
+                    loading="lazy"
+                    decoding="async"
                     key={activeApp}
                     onError={() => setImgError(true)}
                   />
