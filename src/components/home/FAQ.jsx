@@ -59,7 +59,7 @@ const FAQ = () => {
                   textAlign: 'left'
                 }}
               >
-                <span style={{ fontSize: '1.1rem', fontWeight: '700', color: '#0f172a' }}>{faq.question}</span>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: '700', color: '#0f172a', margin: 0 }}>{faq.question}</h3>
                 <span style={{ 
                   fontSize: '1.5rem', 
                   color: '#2563eb', 

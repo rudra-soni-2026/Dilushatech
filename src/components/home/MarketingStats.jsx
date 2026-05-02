@@ -2,10 +2,10 @@ import React from 'react';
 
 const MarketingStats = () => {
   const stats = [
-    { label: 'Traffic Increase', value: '90%', color: '#22d3ee' },
-    { label: 'Lead Conversion', value: '45%', color: '#10b981' },
-    { label: 'Client Retention', value: '98%', color: '#3b82f6' },
-    { label: 'Revenue Growth', value: '3X', color: '#8b5cf6' }
+    { label: 'Traffic Increase', value: '90%', color: '#0e7490' },
+    { label: 'Lead Conversion', value: '45%', color: '#047857' },
+    { label: 'Client Retention', value: '98%', color: '#1d4ed8' },
+    { label: 'Revenue Growth', value: '3X', color: '#6d28d9' }
   ];
 
   return (

@@ -46,7 +46,7 @@ const Testimonials = () => {
                   {t.name.charAt(0)}
                 </div>
                 <div>
-                  <h4 style={{ margin: 0, color: '#0f172a', fontSize: '1rem', fontWeight: '700' }}>{t.name}</h4>
+                  <h3 style={{ margin: 0, color: '#0f172a', fontSize: '1rem', fontWeight: '700' }}>{t.name}</h3>
                   <p style={{ margin: 0, color: '#64748b', fontSize: '0.8rem' }}>{t.role}</p>
                 </div>
               </div>
