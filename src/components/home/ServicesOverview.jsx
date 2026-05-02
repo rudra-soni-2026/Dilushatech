@@ -37,15 +37,26 @@ const ServicesOverview = () => {
         </div>
 
         <div className="u-grid">
-          {services.map((service, index) => (
-            <div className="u-card" key={index}>
-              <div className="u-content">
-                <span className="u-card-cat">{service.category}</span>
-                <h3 className="u-card-title">{service.title}</h3>
-                <p className="u-card-desc">{service.description}</p>
+          {services.map((service, index) => {
+            const waMessage = encodeURIComponent(`Hello DilushaTech! 👋 I'm interested in your "${service.title}" services. I'd love to discuss how you can help me with this project. Please share more details!`);
+            const waLink = `https://wa.me/917470818764?text=${waMessage}`;
+            
+            return (
+              <div className="u-card" key={index}>
+                <div className="u-content">
+                  <div className="u-card-top">
+                    <span className="u-card-cat">{service.category}</span>
+                    <span className="u-card-icon">{service.icon}</span>
+                  </div>
+                  <h3 className="u-card-title">{service.title}</h3>
+                  <p className="u-card-desc">{service.description}</p>
+                  <a href={waLink} target="_blank" rel="noopener noreferrer" className="service-wa-btn">
+                    Inquire on WhatsApp
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

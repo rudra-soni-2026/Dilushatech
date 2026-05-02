@@ -318,11 +318,12 @@ svg rect {
     border-radius: 30px;
     bottom: 15px;
     right: 15px;
-    gap: 6px;
+    gap: 8px;
   }
-  .whatsapp-float .wa-icon {
-    width: 15px !important;
-    height: 15px !important;
+  .wa-icon {
+    width: 22px !important;
+    height: 22px !important;
+    display: block;
   }
 }
 
@@ -1561,6 +1562,41 @@ svg rect {
   letter-spacing: 1px;
 }
 
+.u-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.u-card-icon {
+  font-size: 2rem;
+}
+
+.service-wa-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #000;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.service-wa-btn:hover {
+  background: #25d366;
+  border-color: #25d366;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+}
+
 /* --- PRODUCT SIMPLE REFINED --- */
 .product-card-simple {
   background: #ffffff;
@@ -1730,49 +1766,66 @@ html { scroll-behavior: smooth; }
 /* --- PRODUCT SHOWCASE MOBILE FIXES --- */
 @media (max-width: 768px) {
   .phone-stack-v3 {
-    width: 300px !important;
-    height: 480px !important;
-    perspective: 800px;
+    width: 320px !important;
+    height: 520px !important;
+    perspective: 1200px;
     margin: 0 auto !important;
   }
   
   .phone-frame-v3 {
-    width: 210px !important;
-    height: 420px !important;
-    border-radius: 30px !important;
-    padding: 8px !important;
+    width: 240px !important;
+    height: 480px !important;
+    border-radius: 32px !important;
+    padding: 4px !important;
+    border-width: 2px !important;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1) !important;
   }
 
   .secondary-phone {
-    display: none !important; /* Hide background phones on mobile to prevent clutter */
+    display: none !important;
   }
 
   .app-hub-centered {
-    padding: 2rem 0 !important;
-    overflow: hidden;
+    padding: 3rem 0 !important;
+    background: radial-gradient(circle at center, rgba(37, 99, 235, 0.05) 0%, transparent 70%) !important;
   }
 
   .app-switcher-v3 {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.8rem !important;
-    margin-top: 2rem !important;
-    padding: 0 1rem;
+    gap: 10px !important;
+    margin-top: 3rem !important;
+    padding: 0 15px;
   }
 
   .switcher-btn {
-    padding: 0.5rem 1.2rem !important;
-    font-size: 0.8rem !important;
+    padding: 10px 20px !important;
+    font-size: 0.85rem !important;
+    border-radius: 100px !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0,0,0,0.05) !important;
+    color: #475569 !important;
+    font-weight: 700 !important;
+  }
+
+  .switcher-btn.active {
+    background: #000 !important;
+    color: #fff !important;
+    transform: scale(1.05);
   }
 
   .phone-glow-v3 {
-    width: 250px !important;
-    height: 250px !important;
+    width: 300px !important;
+    height: 300px !important;
+    filter: blur(80px) !important;
+    opacity: 0.4 !important;
   }
 
   .dynamic-island-v3 {
-    width: 45px !important;
-    height: 12px !important;
+    width: 60px !important;
+    height: 15px !important;
+    top: 12px !important;
   }
 }
 
