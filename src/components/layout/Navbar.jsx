@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="nav-overlay" onClick={() => setIsOpen(false)} role="button" aria-label="Close Menu"></div>
       <div className="nav-container">
         <Link to="/" className="nav-logo" onClick={() => setIsOpen(false)}>
-          <img src={mainLogo} alt="DilushaTech" className="nav-logo-img" decoding="async" />
+          <img src={mainLogo} alt="DilushaTech" className="nav-logo-img" decoding="async" width="140" height="140" fetchpriority="high" />
         </Link>
         
         <button className="nav-mobile-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">

@@ -858,22 +858,34 @@ svg rect {
 }
 
 .shimmer-text {
-  background: linear-gradient(90deg,
-      var(--primary) 0%,
-      var(--secondary) 25%,
-      var(--primary) 50%,
-      var(--secondary) 75%,
-      var(--primary) 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shimmer 4s linear infinite;
+  position: relative;
+  display: inline-block;
+  color: var(--primary);
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  overflow: hidden;
 }
 
-@keyframes shimmer {
-  to {
-    background-position: 200% center;
-  }
+.shimmer-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.6) 50%, 
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: shimmerMove 3s infinite;
+  will-change: transform;
+}
+
+@keyframes shimmerMove {
+  to { transform: translateX(100%); }
 }
 
 .gradient-text-v2 {
@@ -1711,10 +1723,24 @@ html { scroll-behavior: smooth; }
 .switcher-btn { padding: 0.6rem 1.5rem; border: 1px solid rgba(0,0,0,0.05); background: #ffffff; border-radius: 30px; font-size: 0.9rem; font-weight: 700; color: #94a3b8; cursor: pointer; transition: all 0.3s ease; }
 .switcher-btn.active { background: #000000; color: #ffffff; border-color: #000000; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
-@keyframes slideProgress { 0% { width: 0%; } 100% { width: 100%; } }
+@keyframes slideProgress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
 @keyframes imageFadeIn { 0% { opacity: 0; transform: scale(0.95); } 100% { opacity: 1; transform: scale(1); } }
 .switcher-btn { position: relative; overflow: hidden; }
-.switcher-progress { position: absolute; bottom: 0; left: 0; height: 3px; background: var(--primary); animation: slideProgress 5s linear forwards; }
+.switcher-progress { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  height: 3px; 
+  width: 100%;
+  background: var(--primary); 
+  transform-origin: left;
+  animation: slideProgress 5s linear forwards; 
+  will-change: transform;
+}
+
 .slide-fade { animation: imageFadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
 .phone-glow-v3 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; filter: blur(120px); border-radius: 50%; z-index: -1; transition: all 1s ease; }
 
