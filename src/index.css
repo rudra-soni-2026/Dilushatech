@@ -1301,7 +1301,8 @@ svg rect {
   letter-spacing: 1px;
 }
 
-.tech-dot-v3 {
+.tech-item-v3::before {
+  content: "";
   width: 6px;
   height: 6px;
   background: var(--primary);

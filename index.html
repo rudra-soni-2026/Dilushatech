@@ -5,10 +5,14 @@
     <link rel="icon" type="image/png" sizes="100x100" href="/src/assets/fav.png" />
     <link rel="icon" type="image/png" sizes="500x500" href="/src/assets/fav.png" />
     <link rel="apple-touch-icon" href="/src/assets/fav.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <style>
+      @font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 300; font-display: swap; src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj62UUsj.ttf) format('truetype'); }
+      @font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUUsj.ttf) format('truetype'); }
+      @font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 500; font-display: swap; src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7aUUsj.ttf) format('truetype'); }
+      @font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj42Vksj.ttf) format('truetype'); }
+      @font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVksj.ttf) format('truetype'); }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DilushaTech - Web Development & App Development Company in India</title>
     <meta name="description" content="DilushaTech is the leading web development company in India, providing mobile app development services, React development, and Node.js backend solutions. We build premium digital experiences for global brands." />
@@ -60,9 +64,32 @@
       "description": "DilushaTech is the leading web development company in India specializing in mobile app development, React, and Node.js backend solutions."
     }
     </script>
+    <style>
+      :root {
+        --bg-dark: #ffffff;
+        --bg-navy: #f8fafc;
+        --primary: #22d3ee;
+        --secondary: #3b82f6;
+        --text-main: #000000;
+        --text-muted: #334155;
+      }
+      body { margin: 0; font-family: sans-serif; background: #fff; color: #000; overflow-x: hidden; }
+      .hero-premium-simple { min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 80px 2rem; }
+      .hero-headline-v2 { font-size: 3.5rem; font-weight: 850; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -2px; }
+      .bg-gradient { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, #f1f5f9 0%, #ffffff 100%); z-index: -2; }
+      .shimmer-text { position: relative; display: inline-block; color: #22d3ee; }
+      .hero-subtext-v2 { font-size: 1.15rem; color: #334155; max-width: 700px; margin: 0 auto 2.5rem; line-height: 1.6; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <section class="hero-premium-simple">
+        <div class="hero-content-v2">
+          <h1 class="hero-headline-v2">India's Premier <span class="shimmer-text">Web & App</span> Development Agency</h1>
+          <p class="hero-subtext-v2">As a leading web development company in India, we provide expert mobile app development services and custom software to help brands scale globally.</p>
+        </div>
+      </section>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

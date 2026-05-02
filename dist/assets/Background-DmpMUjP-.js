@@ -1,0 +1,1 @@
+import{n as e,t}from"./jsx-runtime-ByY1xr43.js";e();var n=t(),r=()=>(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(`div`,{className:`bg-gradient`}),(0,n.jsxs)(`div`,{className:`bg-blobs`,children:[(0,n.jsx)(`div`,{className:`blob blob-1`}),(0,n.jsx)(`div`,{className:`blob blob-2`})]})]});export{r as t};

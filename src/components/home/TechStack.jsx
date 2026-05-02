@@ -12,7 +12,6 @@ const TechStack = () => {
         <div className="marquee-content-v3">
           {techs.concat(techs).map((tech, index) => (
             <div className="tech-item-v3" key={index}>
-              <div className="tech-dot-v3"></div>
               <span>{tech}</span>
             </div>
           ))}
