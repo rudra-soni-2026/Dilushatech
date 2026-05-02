@@ -9,8 +9,7 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            const modules = ['react', 'react-dom', 'react-router-dom', '@remix-run'];
-            if (modules.some(m => id.includes(`/node_modules/${m}/`))) {
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {
               return 'react-vendor';
             }
           }
