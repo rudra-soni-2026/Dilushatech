@@ -6,6 +6,8 @@ import TechStack from '../components/home/TechStack';
 import ProductShowcase from '../components/home/ProductShowcase';
 import MarketingStats from '../components/home/MarketingStats';
 import Process from '../components/home/Process';
+import Testimonials from '../components/home/Testimonials';
+import FAQ from '../components/home/FAQ';
 import FinalCTA from '../components/home/FinalCTA';
 import Footer from '../components/layout/Footer';
 import Background from '../components/Background';
@@ -50,10 +52,10 @@ const Home = () => {
         </section>
 
         <ProductShowcase />
-
+        <Testimonials />
         <Process />
         <MarketingStats />
-
+        <FAQ />
         <FinalCTA />
       </main>
 
@@ -63,3 +65,4 @@ const Home = () => {
 };
 
 export default Home;
+
