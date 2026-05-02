@@ -29,14 +29,14 @@ const Home = () => {
         <Suspense fallback={null}>
           <Hero />
         </Suspense>
-        
+
         <Suspense fallback={null}>
           <TechStack />
         </Suspense>
-        
+
         <Suspense fallback={<div className="u-section" style={{ height: '200px' }}></div>}>
           <ServicesOverview />
-          
+
           <section className="trust-counter-section">
             <div className="u-container">
               <h2 className="sr-only">Our Achievement Statistics</h2>
