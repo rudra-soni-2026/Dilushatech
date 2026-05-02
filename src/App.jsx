@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { SpeedInsights } from "@vercel/speed-insights/react";
+// import { SpeedInsights } from "@vercel/speed-insights/react";
 import Home from './pages/Home';
 import ComingSoon from './pages/ComingSoon';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -31,7 +31,7 @@ function App() {
           <Route path="*" element={<Home />} />
         </Routes>
       </Router>
-      <SpeedInsights />
+      {/* <SpeedInsights /> */}
     </HelmetProvider>
   );
 }
