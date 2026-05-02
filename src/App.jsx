@@ -21,7 +21,7 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
-        <Suspense fallback={<div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#fff' }}></div>}>
+        <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
